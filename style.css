@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #d1d1d1; /* Cinza claro para texto */
+    background-color: #121212; /* Preto ajustado */
+    padding: 20px;
+    background-attachment: fixed;
+}
+header{
+    background-color: #00A86B; /* Seu verde vibrante */
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header, footer {
+    background-color: rgba(0, 168, 107, 0.9); /* Verde vibrante com transparência */
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1.header-title, nav ul li a, footer a, section a, h1, h2, h3, h4, h5, h6 {
+    color: #c7f0db; /* Cor ajustada para todos os links e títulos */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #adebad; /* Verde claro para hover */
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+}
+
+.projeto-item, .swiper-slide {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,255,0,0.2);
+}
+
+.galeria-projetos, .swiper {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00A86B #333;
+}
+
+.projeto, .swiper-slide {
+    min-width: 300px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.projeto img, .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.swiper-slide img {
+    max-height: 250px; 
+    width: 250; 
+    max-width: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+    margin: 0 auto; 
+}
+
+.swiper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cor das setas de navegação */
+.swiper-button-prev, .swiper-button-next {
+    color: #adebad; /* Um verde claro para contraste */
+}
+
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    color: #00ff00; /* Um verde mais vibrante */
+}
+
+
+.swiper-pagination-bullet {
+    background: #adebad; 
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #00ff00; 
+}
+
+.projeto {
+    text-align: center; 
+    padding: 15px; 
+}
+
+
+
+.galeria-projetos::-webkit-scrollbar, .swiper-slide::-webkit-scrollbar {
+    height: 8px;
+}
+
+.galeria-projetos::-webkit-scrollbar-track, .swiper-slide::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.galeria-projetos::-webkit-scrollbar-thumb, .swiper-slide::-webkit-scrollbar-thumb {
+    background-color: #00A86B;
+    border-radius: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px; 
+    background-color: #007B43; 
+    color: #fff; 
+    font-size: 18px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    outline: none; 
+}
+
+form button:hover, form button:focus {
+    background-color: #009054; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0.1;
+    }
+}
+
+body::before {
+    animation: rotateLogo 60s linear infinite;
+}

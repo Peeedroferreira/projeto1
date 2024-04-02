@@ -3,87 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Shop - A sua loja de games</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Doctor Python</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Games Shop</h1>
-            <nav>
-                <ul>
-                    <li>
-                    <a href="#about" >Sobre a loja</a>
-                    </li>
-                    <li>
-                    <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <h1 class="header-title"> Doctor Python Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+    <section id="home">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+    </section>
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>Ao longo de uma carreira de oito anos dedicados ao Direito, a paixão pela programação e tecnologia sempre caminhou paralelamente aos estudos jurídicos e práticas advocatícias. Desde o início, essa afinidade não era apenas um hobby, mas uma verdadeira vocação que clamava por atenção. A cada caso jurídico resolvido, a curiosidade tecnológica crescia, evidenciando uma paixão latente que se recusava a ficar em segundo plano.
 
-    <section id="about">
-        <div class="container">
-            <img class="store-font" src="./images/loja.jpg" alt="Fachada da loja Games Shop">
-            <div>
-                <h2>Sobre a Loja</h2>
-                <p>
-                    A Games Shop é uma loja especializada em games, consoles e acessórios. 
-                    Trabalhamos com as melhores marcas e produtos do mercado. 
-                    Venha nos visitar e conhecer o que há de melhor em jogos eletrônicos.
-                </p>
-                <ul>
-                <ul class="brands-list">
-                    <li><img src="./images/nintendo.png" alt="Nintendo"</li>
-                    <li><img src="./images/playstation.png" alt="Playstation"</li>
-                    <li><img src="./images/xbox.png" alt="Xbox"</li>
-                </ul>
+            O caminho percorrido no Direito foi repleto de aprendizados significativos e conquistas notáveis. Cada processo, audiência e consulta jurídica não só contribuiu para o aprimoramento profissional, mas também para o desenvolvimento de habilidades analíticas e de resolução de problemas, qualidades estas inestimavelmente valiosas no mundo da programação.
+            
+            Entretanto, a verdadeira paixão pela programação e tecnologia sempre se fez presente, conduzindo a uma jornada autodidata de constante aprendizado. Horas dedicadas a estudar linguagens de programação, sistemas e algoritmos em meio aos compromissos jurídicos revelaram uma determinação inabalável de dominar este campo. Foi essa persistência que pavimentou o caminho para a tomada de uma decisão transformadora: investir de maneira concreta na carreira de programação.
+            
+            A escolha do Python como ponto de partida nessa nova jornada não foi aleatória. Reconhecido por sua simplicidade e versatilidade, o Python abre portas para diversas áreas da tecnologia, como desenvolvimento web, análise de dados, inteligência artificial e automação. Essa linguagem, com sua sintaxe clara e legível, promete ser o veículo ideal para transformar a paixão e o autodidatismo em uma carreira próspera e gratificante na tecnologia.
+            
+            Este momento marca não apenas uma transição de carreira, mas a realização de um sonho longamente acalentado. O objetivo agora é fundir os anos de experiência e habilidades adquiridas no Direito com o vasto mundo da programação, buscando inovações e soluções tecnológicas que possam ter um impacto significativo tanto no setor jurídico quanto em outras áreas. Com o Python como ferramenta, o horizonte se expande para um futuro onde a tecnologia e o Direito caminham juntos, abrindo um leque de possibilidades para contribuições significativas e um contínuo crescimento profissional.</p>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Cada projeto agora é um "swiper-slide" -->
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do Projeto 1.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/maxresdefault.png" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do Projeto 2.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do Projeto 3.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 4">
+                    <h3>Projeto 4</h3>
+                    <p>Descrição breve do Projeto 4.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 5">
+                    <h3>Projeto 5</h3>
+                    <p>Descrição breve do Projeto 5.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 6">
+                    <h3>Projeto 6</h3>
+                    <p>Descrição breve do Projeto 6.</p>
+                </div>
+                <div class="swiper-slide projeto">
+                    <img src="images/download.png" alt="Projeto 7">
+                    <h3>Projeto 7</h3>
+                    <p>Descrição breve do Projeto 7.</p>
+                </div>
             </div>
+            </div>
+            <!-- Se desejar, adicione controles de navegação -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
-                <div>
-                    <h3>Fale Conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu Nome" required>
-                        <input type="email" placeholder="E-mail" required>
-                        <input type="tel" placeholder="Telefone(Opcional)">
-                        <textarea placeholder="Mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div>
-                    <h3>Nos Acompanhe nas Redes Sociais</h3>
-                    <ul class="social-links">
-                        <li><a href="#" title="Siga-nos no Facebook">
-                            <img src="./images/facebook.png" alt="Facebook"></a>
-                        </li>
-                        <li><a href="#"title="Siga-nos no Instagram">
-                            <img src="./images/instagram.png" alt="Instagram"></a>
-                        </li>
-                        <li><a href="#" title="Ative o sininho no Youtube">
-                            <img src="./images/youtube.png" alt="Youtube"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Venha até Nós</h3>
-                    <p>Av. Python, 666</p>
-                </div>
-            </div>
-        </div>
+    <section id="contato">
+        <h2>Contato</h2>
+        <form onsubmit="return validarFormulario()">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Games Shop - Todos os direitos reservados</p>
-        </div>
+        <p>© 2024 Doctor Python. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        function validarFormulario() {
+            // Exemplo simples de validação
+            alert('Formulário enviado com sucesso!');
+            return true; // permitir o envio do formulário
+        }
+    </script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true,
+            },
+        });
+    </script>
 </body>
 </html>
